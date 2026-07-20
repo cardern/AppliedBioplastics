@@ -34,7 +34,7 @@
             <a href="#technology">Technology</a>
             <a href="#backers">Backers</a>
             <a href="#press">Press</a>
-            <a class="buy-button" href="https://www.knowde.com/stores/applied-bioplastics">Buy Now</a>
+            <a class="buy-button" href="https://www.knowde.com/stores/applied-bioplastics" data-buy-trigger>Buy Now</a>
           </nav>
         </div>
       </header>
@@ -43,36 +43,41 @@
         <section class="hero">
           <div class="hero-copy">
             <h1>
-              Making sustainable plastic<br />
-              <span>affordable</span><span class="hero-period" aria-hidden="true"></span>
+              <span class="hero-line-desktop">Making sustainable plastic</span>
+              <span class="hero-line-mobile">Making sustainable</span><br />
+              <span class="hero-line-mobile">plastic </span><span class="hero-highlight">affordable</span><span class="hero-period" aria-hidden="true"></span>
             </h1>
             <p>No new equipment, no compromises.</p>
           </div>
         </section>
 
         <section id="products" class="product-section">
-          <div class="product-copy">
-            <h2>BioFi</h2>
-            <p>
-              Thermoplastic (PP and PE) combining agricultural waste with
-              standard, recycled, or biobased polymers. Can be injection molded
-              or extruded using industry standard equipment.
-            </p>
-
-            <div class="feature-block">
-              <h3>Cost Competitive</h3>
+          <div class="product-copy-stack">
+            <div class="product-copy product-intro">
+              <h2>BioFi</h2>
               <p>
-                Enables manufacturers to cost effectively reduce their carbon
-                footprint and dependence on virgin polymers.
+                Thermoplastic (PP and PE) combining agricultural waste with
+                standard, recycled, or biobased polymers. Can be injection molded
+                or extruded using industry standard equipment.
               </p>
             </div>
 
-            <div class="feature-block">
-              <h3>Application Areas</h3>
-              <p>
-                Can be used across the household, automotive, appliance,
-                electronics, and outdoor equipment industries.
-              </p>
+            <div class="product-features">
+              <div class="feature-block">
+                <h3>Cost Competitive</h3>
+                <p>
+                  Enables manufacturers to cost effectively reduce their carbon
+                  footprint and dependence on virgin polymers.
+                </p>
+              </div>
+
+              <div class="feature-block">
+                <h3>Application Areas</h3>
+                <p>
+                  Can be used across the household, automotive, appliance,
+                  electronics, and outdoor equipment industries.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -194,29 +199,61 @@
             </div>
           </div>
 
-          <div class="product-copy">
-            <h2>BTR Board</h2>
-            <p>
-              Biothermoset resin (BTR) composite which competes favorably with
-              materials like fiberglass and sheet metal on price and
-              functionality.
-            </p>
-
-            <div class="feature-block">
-              <h3>Stable Inputs</h3>
+          <div class="product-copy-stack">
+            <div class="product-copy product-intro">
+              <h2>BTR Board</h2>
               <p>
-                Composed of up to 50% sustainable plant biomass which reduces
-                cost variability.
+                Biothermoset resin (BTR) composite which competes favorably with
+                materials like fiberglass and sheet metal on price and
+                functionality. Jutin is the flagship BTR product, made with woven jute fiber in Bangladesh.
               </p>
             </div>
 
-            <div class="feature-block">
-              <h3>Durable and Functional</h3>
-              <p>
-                Lasts for many years and is easy to maintain. Ideal for humid
-                environments where metal would rust. Water, heat, and fire
-                resistant.
-              </p>
+            <div class="product-features">
+              <div class="feature-block">
+                <h3>Stable Inputs</h3>
+                <p>
+                  Composed of up to 50% sustainable plant biomass which reduces
+                  cost variability.
+                </p>
+              </div>
+
+              <div class="feature-block">
+                <h3>Durable and Functional</h3>
+                <p>
+                  Lasts for many years and is easy to maintain. Ideal for humid
+                  environments where metal would rust. Water, heat, and fire
+                  resistant.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="video-hero-section video-hero-full-width" aria-label="BTR Board in action">
+          <div class="video-hero-frame">
+            <video
+              class="video-hero-media"
+              muted
+              loop
+              playsinline
+              preload="none"
+              poster="assets/images/hero/btr-board-hero-poster.jpg"
+              data-lazy-video
+            >
+              <source data-src="assets/videos/btr-board-hero.mp4" type="video/mp4" />
+            </video>
+
+            <div class="video-hero-overlay">
+              <div class="video-hero-copy">
+                <!-- PLACEHOLDER COPY: swap for client-approved headline/subtext -->
+                <span class="video-hero-kicker">BTR Board</span>
+                <h2>In the field, built to last</h2>
+                <p>Water, heat, and fire resistant - thriving in conditions that break standard materials.</p>
+                <noscript>
+                  <style>.video-hero-copy { opacity: 1 !important; transform: none !important; }</style>
+                </noscript>
+              </div>
             </div>
           </div>
         </section>
@@ -331,7 +368,7 @@
               </div>
             </div>
 
-            <div class="backers-grid backers-grid-two">
+            <div class="backers-grid backers-grid-three">
               <div class="backers-logo-card">
                 <img
                   class="backers-logo backers-logo-4ward"
@@ -344,6 +381,13 @@
                   class="backers-logo backers-logo-rga"
                   src="assets/images/backers/RGA.png"
                   alt="RGA logo"
+                />
+              </div>
+              <div class="backers-logo-card">
+                <img
+                  class="backers-logo backers-logo-snocap"
+                  src="assets/images/backers/snocap.png"
+                  alt="Snocap logo"
                 />
               </div>
             </div>
@@ -388,30 +432,56 @@
               <article class="press-card press-card-wide press-card-reverse">
                 <div class="press-copy">
                   <p class="press-title">
-                    EcoWatch - "Innovative Plant-Based Plastic Helps Build Safe,
-                    Dry Homes for Refugees"
+                    <a
+                      href="https://www.ecowatch.com/plant-based-plastic-homes-refugees.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      EcoWatch - "Innovative Plant-Based Plastic Helps Build Safe,
+                      Dry Homes for Refugees"
+                    </a>
                   </p>
                   <p class="press-date">(March 2023)</p>
                 </div>
-                <img
-                  class="press-logo"
-                  src="assets/images/press/ecowatch.png"
-                  alt="EcoWatch logo"
-                />
+                <a
+                  href="https://www.ecowatch.com/plant-based-plastic-homes-refugees.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Read EcoWatch article"
+                >
+                  <img
+                    class="press-logo"
+                    src="assets/images/press/ecowatch.png"
+                    alt="EcoWatch logo"
+                  />
+                </a>
               </article>
             </div>
 
             <div class="press-row">
               <article class="press-card press-card-wide">
-                <img
-                  class="press-logo"
-                  src="assets/images/press/azocleantech.png"
-                  alt="AZO CleanTech logo"
-                />
+                <a
+                  href="https://www.azocleantech.com/article.aspx?ArticleID=1687"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Read AZoCleantech article"
+                >
+                  <img
+                    class="press-logo"
+                    src="assets/images/press/azocleantech.png"
+                    alt="AZO CleanTech logo"
+                  />
+                </a>
                 <div class="press-copy">
                   <p class="press-title">
-                    AZO CleanTech - "Can We Reduce Ocean Plastic Waste by
-                    Improving the Recycling Industry?"
+                    <a
+                      href="https://www.azocleantech.com/article.aspx?ArticleID=1687"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      AZO CleanTech - "Can We Reduce Ocean Plastic Waste by
+                      Improving the Recycling Industry?"
+                    </a>
                   </p>
                   <p class="press-date">(May 2023)</p>
                 </div>
@@ -471,7 +541,7 @@
             </div>
 
             <div class="press-row press-row-centered">
-              <article class="press-card press-card-center press-card-sxsw">
+              <article class="press-card press-card-center press-card-compact press-card-sxsw">
                 <div class="press-copy">
                   <p class="press-title">
                     <a
@@ -511,19 +581,19 @@
             </div>
 
             <div class="footer-center">
-              <a class="footer-social" href="#" aria-label="Facebook">
+              <a class="footer-social" href="https://www.facebook.com/profile.php?id=100064020823429" aria-label="Facebook">
                 <img
                   src="assets/images/footer/fb.svg"
                   alt=""
                 />
               </a>
-              <a class="footer-social" href="#" aria-label="LinkedIn">
+              <a class="footer-social" href="https://www.linkedin.com/company/applied-bioplastics" aria-label="LinkedIn">
                 <img
                   src="assets/images/footer/linekdin.svg"
                   alt=""
                 />
               </a>
-              <a class="footer-contact" href="#">Contact us</a>
+              <a class="footer-contact" href="mailto:hello@appliedbioplastics.com">Contact us</a>
             </div>
 
             <a class="footer-top" href="#top" aria-label="Back to top">
@@ -535,6 +605,62 @@
           </div>
         </footer>
       </main>
+    </div>
+
+    <div class="buy-modal" id="buy-modal" aria-hidden="true">
+      <div class="buy-modal-backdrop" data-modal-close></div>
+
+      <div
+        class="buy-modal-dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="buy-modal-title"
+      >
+        <button
+          class="buy-modal-close"
+          type="button"
+          aria-label="Close"
+          data-modal-close
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 6l12 12M18 6L6 18"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <!-- <div class="buy-modal-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 8h12l-1 12.5a1 1 0 0 1-1 .9H8a1 1 0 0 1-1-.9L6 8Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9 8V6.5a3 3 0 0 1 6 0V8"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div> -->
+
+        <h2 id="buy-modal-title">Buy Applied Bioplastics</h2>
+        <p class="buy-modal-subtitle">Choose a marketplace to purchase our products.</p>
+
+        <!-- Populated from the `marketplaces` list in assets/js/main.js -->
+        <div class="buy-modal-links" id="buy-modal-links"></div>
+      </div>
     </div>
 
     <script src="assets/js/main.js"></script>
